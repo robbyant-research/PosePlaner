@@ -692,3 +692,23 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; }
 .refinement-step::before,.refinement-step::after { content:""; position:absolute; left:0; right:0; bottom:-2px; height:2px; pointer-events:none; }
 .refinement-step::before { background:var(--c-line); }
 .refinement-step::after { background:var(--c-accent); transform:scaleX(var(--stage-progress,0)); transform-origin:left; }
+
+/* Publication resources: compact controls and original affiliation marks. */
+.hero__logos { display: flex; align-items: center; justify-content: center; gap: 44px; margin: 24px 0 20px; }
+.hero__logos img { display: block; object-fit: contain; }
+.hero__logo-hkust { width: 64px; height: 64px; }
+.hero__logo-robbyant { width: 148px; height: 42px; }
+.hero__resources { gap: 10px; margin: 0 0 28px; }
+.resource-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 17px; border: 1px solid #555; border-radius: 6px; background: #fff; color: #333; font: inherit; font-size: 14px; font-weight: 500; line-height: 20px; text-decoration: none; transition: background-color .15s, border-color .15s; }
+.resource-button svg { width: 17px; height: 17px; flex: none; }
+.resource-button small { font-size: 10px; font-weight: 400; }
+.resource-button:enabled:hover, a.resource-button:hover { border-color: var(--c-accent); background: var(--c-active-bg); color: var(--c-accent); }
+.resource-button:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 4px; }
+.resource-button:disabled { color: #999; border-color: #d1d1d1; background: #fafafa; cursor: not-allowed; }
+@media (max-width: 600px) {
+ .hero__logos { gap: 32px; margin: 22px 0 18px; }
+ .hero__logo-hkust { width: 56px; height: 56px; }
+ .hero__logo-robbyant { width: 132px; height: 38px; }
+ .hero__resources { gap: 8px; margin-bottom: 24px; }
+ .resource-button { padding: 8px 12px; gap: 6px; font-size: 13px; }
+}
