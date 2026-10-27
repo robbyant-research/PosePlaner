@@ -712,3 +712,20 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; }
  .hero__resources { gap: 8px; margin-bottom: 24px; }
  .resource-button { padding: 8px 12px; gap: 6px; font-size: 13px; }
 }
+
+/* Local preview: shared PosePlaner wordmark, original transparent asset. */
+.hero__title--wordmark { line-height:1; }
+.hero__brand { position:relative; display:block; width:min(590px,88%); aspect-ratio:2085/327; margin:0 auto 22px; overflow:hidden; }
+.hero__brand img { position:absolute; width:104.1727%; max-width:none; height:auto; left:-2.1583%; top:-58.104%; }
+.hero__paper-name { display:block; font-size:clamp(23px,2.35vw,30px); font-weight:600; line-height:1.3; letter-spacing:-.025em; }
+.hero { padding-top:46px; }
+@media(max-width:600px) {
+ .hero { padding-top:36px; }
+ .hero__brand { width:96%; margin-bottom:20px; }
+ .hero__paper-name { font-size:23px; line-height:1.3; }
+}
+
+/* Refined geometric identity: quieter scale alongside the complete title. */
+.hero__brand { width:min(510px,86%); margin-bottom:24px; }
+.hero__paper-name { font-size:clamp(22px,2.2vw,28px); line-height:1.35; font-weight:550; }
+@media(max-width:600px) { .hero__brand { width:90%; margin-bottom:21px; } .hero__paper-name { font-size:22px; } }
